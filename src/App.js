@@ -1,35 +1,40 @@
 import React, { Component } from 'react';
-import Trianglify from 'trianglify';
-//import logo from './logo.svg';
+import { BrowserRouter as Router, Link } from 'react-router-dom';
+import Route from 'react-router-dom/Route';
+import Pattern from './Components/Trianglify/Trianglify';
+import logo from './Assets/lastkwe.jpg';
 import './App.css';
-
-const pattern = Trianglify({
-  width: window.innerWidth,
-  height: window.innerHeight
-});
 
 class App extends Component {
 
   componentDidMount() {
-    //document.querySelector('.App-header');
-
-    document.querySelector('.pattern').appendChild(pattern.canvas());
+    document.title = "Kwechetel | Welcome!";
   }
 
-  changePattern() {
-    document.querySelector('.pattern').appendChild(pattern.canvas());
-  }
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
+      <Router>
+        <Route path="/" render={
+          () => {
+            return (
+              <div className="App">
+              <header className="App-header">
+    
+                <Pattern/>
 
-          <div className="pattern" style={{height: `${100} ${'%'}`}}></div>
-
-          <button style={{zIndex: 1}} onClick={this.changePattern}>Click</button>
-          
-        </header>
-      </div>
+                <div style={{zIndex: 1}}>
+                  <div className='mypic'><img src={logo} alt='mypic'/></div>                  
+                  <Link to="/">
+                    <button onClick={this.changePattern}>Click Me</button>
+                  </Link>
+                </div>
+                
+              </header>
+            </div>
+            );
+          }
+        } />
+      </Router>
     );
   }
 }

@@ -6,7 +6,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 nav {
   z-index: 999999999999;
@@ -16,6 +16,16 @@ nav {
   width: 100%;
   text-align: left;
 }
+.fixedClass {
+  position: fixed;
+}
+nav.fixedClass {
+  background: rgba(255, 255, 255, 0.897);
+  color: #272b2e;
+}
+.fixedClass button {
+  color: #272b2e;
+}
 nav button {
   margin: 2vh 2vw;
   border: none;
@@ -23,4 +33,15 @@ nav button {
   font-size: calc(10px + 2vmin);
   color: rgb(228, 220, 213);
   outline: none;
+}
+
+footer {
+  z-index: 999;
+  height: 40vh;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.664);
+  position: relative;
+  text-align: left;
+  padding: 2vh 20vw;
+  font-size: calc(10px + 1vmin);
 }

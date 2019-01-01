@@ -1,0 +1,15 @@
+.WorkingOn .CurrentWork {
+    border-radius: 3vh;
+    width: 20vw;
+    background: rgba(0, 0, 0, 0.52);
+    color: white;
+    padding: 1vh 1vw;
+    position: absolute;
+    right: 2vw;
+    top: 18vh;
+    text-align: left;
+  }
+
+  .WorkingOn .fixedClass {
+      position: fixed;
+  }

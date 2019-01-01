@@ -4,7 +4,7 @@ import Trianglify from 'trianglify';
 const pattern = Trianglify({
   width: window.innerWidth,
   height: window.innerHeight,
-  cell_size: 60
+  cell_size: 100
 });
 
 class Pattern extends Component {

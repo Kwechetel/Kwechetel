@@ -7,5 +7,20 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
-  overflow-y: hidden;
+}
+nav {
+  z-index: 999999999999;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: left;
+}
+nav button {
+  margin: 2vh 2vw;
+  border: none;
+  background: none;
+  font-size: calc(10px + 2vmin);
+  color: rgb(228, 220, 213);
+  outline: none;
 }

@@ -1,7 +1,6 @@
 .App {
   text-align: center;
 }
-
 .App-header {
   /*background-color: #282c34;*/
   min-height: 100vh;
@@ -9,11 +8,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: calc(9px + 0.8vmin);
 }
-.pattern {
-  position: absolute;
+.App-header .pattern {
+  position: fixed;
   top: 0;
   left: 0;
 }
@@ -36,13 +34,44 @@
     transform: rotate(360deg);
   }
 }*/
-.mypic {
-  height: 200px;
-  width: 200px;
-  border-radius: 50%;
-  position: relative;
+.App-header .currents {
+  border-radius: 3vh;
+  width: 20vw;
+  background: rgba(0, 0, 0, 0.52);
+  color: white;
+  padding: 1vh 1vw;
+  position: absolute;
+  right: 2vw;
+  top: 18vh;
+  text-align: left;
+}
+.App-header .row {
+  width: 35vw;
+  text-align: left;
+}
+.App-header .row [class*=col-] {
+  height: 40vh;
+  background: white;
   overflow: hidden;
+  padding: 1vh 2vh;
+  position: relative;
 }
 .mypic img {
   height: 100%;
+  margin-left: -35%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.full-name {
+  font-size: calc(10px + 1vmin);
+}
+.App-section {
+  z-index: 9;
+  position: relative;
+}
+.App-section .about {
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.514);
+  
 }

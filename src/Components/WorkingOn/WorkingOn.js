@@ -24,7 +24,7 @@ class WorkingOn extends Component {
     
         const pageScrllTop = window.pageYOffset;
     
-        if (pageScrllTop > 867) {
+        if (pageScrllTop > 867 && pageScrllTop <= 1520) {
     
           this.setState({NavPosition: 'fixedClass'});
     
@@ -40,13 +40,13 @@ class WorkingOn extends Component {
         return(
             <div className="WorkingOn">
                 <div className={` ${'CurrentWork'} ${this.state.NavPosition} `}>
-                    <h2>Working On?</h2>
+                    <h2>Currently Learning</h2>
                     <hr style={{backgroundColor: 'white'}}/>
 
                     <ul style={{fontSize: "2vh"}}>
-                    <li>Klast Academy</li>
-                    <li>QuestDea</li>
-                    <li>UNIfrica</li>
+                    <li>Python</li>
+                    <li>Blockchain</li>
+                    <li>Nodejs</li>
                     </ul>
 
                 </div>

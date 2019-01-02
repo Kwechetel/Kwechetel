@@ -43,9 +43,5 @@
 .App-section {
   z-index: 9;
   position: relative;
-}
-.App-section .about {
-  height: 100vh;
-  background: rgba(255, 255, 255, 0.685);
-  
+  text-align: left;
 }

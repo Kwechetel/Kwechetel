@@ -29,7 +29,7 @@ class Quotes extends Component {
 
     render() {
         return(
-            <p> {this.quotes.arr[this.state.quote]} </p>
+            <p><em>“ {this.quotes.arr[this.state.quote]} ”</em></p>
         );
     }
 

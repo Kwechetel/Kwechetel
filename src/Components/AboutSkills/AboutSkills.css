@@ -1,0 +1,22 @@
+.About {
+    padding: 2vh 25vw 2vh 20vw;
+    min-height: 100vh;
+    background: rgba(255, 255, 255, 0.685); 
+}
+.About .row [class*='col-'] {
+    padding: 2vh;
+}
+.About .row [class*='col-'] ul {
+    list-style: none;
+}
+.About .row [class*='col-'] li {
+    display: inline-block;
+    padding: 0 1vh;
+    font-size: calc(10px + 1vmin);
+    margin: 2vh;
+}
+.About-header {
+    padding: 0 10vw;
+    text-align: center;
+    font-size: calc(10px + 1vmin);
+}

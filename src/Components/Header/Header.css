@@ -1,0 +1,31 @@
+.bounce {
+    position: absolute;
+    bottom: 2vh;
+    width: 10vh;
+    height: 10vh;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    background: none;
+    font-size: 4vh;
+    outline: none;
+    animation: bounce 2s infinite;
+  }
+  .addClass {
+    display: inline;
+  }
+  .removeClass {
+      display: none;
+  }
+  
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-30px);
+    }
+    60% {
+      transform: translateY(-15px);
+    }
+  }

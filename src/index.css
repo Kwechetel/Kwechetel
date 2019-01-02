@@ -36,11 +36,10 @@ nav button {
 
 footer {
   z-index: 999;
-  height: 40vh;
+  min-height: 40vh;
   color: white;
   background-color: rgba(0, 0, 0, 0.664);
   position: relative;
-  text-align: left;
-  padding: 2vh 20vw;
-  font-size: calc(10px + 1vmin);
+  padding: 2vh 35vw;
+  font-size: calc(10px + 2vmin);
 }

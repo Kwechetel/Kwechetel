@@ -87,14 +87,11 @@ class App extends Component {
           <footer>
             <div className="row">
 
-              <div className="col-4">
+              <div className="col-12">
+
                 <Quotes/>
+                
               </div>
-
-              <div className="col-8">
-              
-              </div>
-
             </div>
           </footer>
 

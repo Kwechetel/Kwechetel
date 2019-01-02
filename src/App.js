@@ -87,11 +87,24 @@ class App extends Component {
           <footer>
             <div className="row">
 
-              <div className="col-12">
-
+              <div className="col-4">
                 <Quotes/>
-                
               </div>
+
+              <div className="col-8">
+                <form name="contact" netlify>
+                  <p>
+                    <label>Name <input type="text" name="name" /></label>
+                  </p>
+                  <p>
+                    <label>Email <input type="email" name="email" /></label>
+                  </p>
+                  <p>
+                    <button type="submit">Send</button>
+                  </p>
+                </form>
+              </div>
+
             </div>
           </footer>
 

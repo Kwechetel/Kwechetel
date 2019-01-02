@@ -17,7 +17,7 @@ class Projects extends Component {
                 {'id': 'pro-0', 'name': 'Klast Academy', 'img': klast, 'type': 'logo'},
                 {'id': 'pro-1', 'name': 'UNIfrica Org', 'img': unifrica, 'type': 'logo'},
                 {'id': 'pro-2', 'name': 'QuestDea', 'img': questdea, 'type': 'logo'},
-                {'id': 'pro-3', 'name': 'This', 'img': portfolio, 'type': 'cover'}
+                {'id': 'pro-3', 'name': 'This Project', 'img': portfolio, 'type': 'cover'}
             ]
         };
 

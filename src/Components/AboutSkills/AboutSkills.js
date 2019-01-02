@@ -39,7 +39,7 @@ class AboutSkills extends Component {
 
                     <div className="col-8">
                         <ul>
-                            <li>UI/XU DESIGNER</li>
+                            <li>UI/UX DESIGNER</li>
                             <li>HTML5</li>
                             <li>CSS3</li>
                             <li>JavaScript</li>
@@ -71,7 +71,7 @@ class AboutSkills extends Component {
 
                 <div className="tools">
                     <div className="col-4">
-                        <h2>Tools</h2>
+                        <h2>Version Control Systems</h2>
                     </div>
 
                     <div className="col-8">

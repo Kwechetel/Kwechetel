@@ -62,7 +62,7 @@ class Header extends Component {
 
                 <div className='col-8'>
                   <p className="full-name"><strong>LAST KWECHETE</strong></p>                 
-                  <p><strong>SKILLS:</strong> UI/XU DESIGNER | FULLSTACK DEVELOPER | GRAGHICS DESIGNER | API DEVELOPER</p>
+                  <p><strong>SKILLS:</strong> UI/UX DESIGNER | FULLSTACK DEVELOPER | GRAGHICS DESIGNER | API DEVELOPER</p>
                   <p><strong>PROGRAMMING:</strong> HTML/CSS | JAVASCRIPT | REACT | PHP</p>
                   <hr/>
                   <p>

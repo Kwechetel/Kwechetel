@@ -1,10 +1,15 @@
 import React, { Component } from 'react';
 import { Link } from "react-scroll";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import Pattern from '../Trianglify/Trianglify';
 import logo from '../../Assets/lastkwe.jpg';
 import './Header.css'
+
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { fab, faFacebookSquare, faTwitterSquare, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+
+library.add(fab, faFacebookSquare, faTwitterSquare, faLinkedin);
 
 class Header extends Component {
 
@@ -66,6 +71,13 @@ class Header extends Component {
                   </p>
                 </div>
 
+              </div>
+              <div className="social-network">
+
+                <a href='https://www.facebook.com/kwechetel' target='_blank' rel="noopener noreferrer" ><button><FontAwesomeIcon icon={faFacebookSquare}/></button></a>
+                <a href='https://twitter.com/kwechetel' target='_blank' rel="noopener noreferrer" ><button><FontAwesomeIcon icon={faTwitterSquare}/></button></a>
+                <a href='https://www.linkedin.com/in/last-kwechete-82ab10a4/' target='_blank' rel="noopener noreferrer" ><button><FontAwesomeIcon icon={faLinkedin}/></button></a>
+                
               </div>
               
               <Link to="about" spy={true} smooth={true} duration={500}><button className={` ${"bounce"} ${this.state.classNode} `}><FontAwesomeIcon icon="angle-down"/></button></Link>

@@ -17,7 +17,7 @@ class Projects extends Component {
                 {'id': 'pro-0', 'name': 'Klast Academy', 'img': klast, 'type': 'logo'},
                 {'id': 'pro-1', 'name': 'UNIfrica Org', 'img': unifrica, 'type': 'logo'},
                 {'id': 'pro-2', 'name': 'QuestDea', 'img': questdea, 'type': 'logo'},
-                {'id': 'pro-3', 'name': 'Klast Academy', 'img': portfolio, 'type': 'cover'}
+                {'id': 'pro-3', 'name': 'This', 'img': portfolio, 'type': 'cover'}
             ]
         };
 
@@ -52,7 +52,7 @@ class Projects extends Component {
                                                 <div onMouseOver={this.onMouseOver} id={proj.id} className="overlay">
                                                     <strong>{proj.name}</strong>
                                                 </div>
-                                                
+
                                                 <img className={proj.type} src={proj.img} alt={proj.name}/>
 
                                             </div>

@@ -82,6 +82,24 @@ class AboutSkills extends Component {
                 </div>
 
                 <hr/>
+
+                <div className="tools">
+                    <div className="col-4">
+                        <h2>Graghics Tools</h2>
+                    </div>
+
+                    <div className="col-8">
+                        <ul>
+                            <li>Adobe XD</li>
+                            <li>Adobe AI</li>
+                            <li>Adobe Photoshop</li>
+                            <li>Inkscape</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <hr/>
+
                 <div className="languages">
                     <div className="col-4">
                         <h2>Languages</h2>

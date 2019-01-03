@@ -1,22 +1,44 @@
 .About {
-    padding: 2vh 25vw 2vh 20vw;
+    padding: 2vh 20vw;
     min-height: 100vh;
-    background: rgba(255, 255, 255, 0.685); 
+    background: rgba(255, 255, 255, 0.685);
+    font-size: 2vh;
 }
-.About .row [class*='col-'] {
+@media screen and (max-width: 460px) {
+    .About {
+        padding: 5vh;
+    }
+}
+table {
+    width: 100%;
+}
+.Td-title {
+    width: 35%;
+    position: relative;
+}
+.Td-title h2 {
+    position: absolute;
+    top: 2vh;
+    left: 1vw;
+    font-size: 2vh;
+}
+table td {
+    border-bottom: 1px solid rgb(116, 113, 113);
+    border-collapse: collapse;
+    text-align: right;
+}
+table td  {
     padding: 2vh;
 }
-.About .row [class*='col-'] ul {
+table ul {
     list-style: none;
 }
-.About .row [class*='col-'] li {
+table li {
     display: inline-block;
-    padding: 0 1vh;
-    font-size: calc(10px + 1vmin);
     margin: 2vh;
 }
 .About-header {
     padding: 0 10vw;
     text-align: center;
-    font-size: calc(10px + 1vmin);
+    font-size: 2vh;
 }

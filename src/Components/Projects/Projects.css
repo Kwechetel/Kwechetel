@@ -1,7 +1,16 @@
 .Projects {
-    padding: 2vh 25vw 2vh 20vw;
+    padding: 2vh 20vw;
     min-height: 75vh;
     background: rgb(255, 255, 255); 
+}
+@media screen and (max-width: 460px) {
+    .Projects {
+        padding: 5vh;
+    }
+    .Projects .col-4 {
+        width: 100%;
+        margin-bottom: 2vh;
+    }
 }
 .Projects-header {
     padding: 0 10vw;
@@ -34,6 +43,9 @@
 }
 .Projects .project .thumbnail .overlay {
     transition: visibility 0s, opacity 0.5s linear;
+    -ms-transition: visibility 0s, opacity 0.5s linear;
+    -moz-transition: visibility 0s, opacity 0.5s linear;
+    -webkit-transition: visibility 0s, opacity 0.5s linear;
     display: flex;
     visibility: hidden;
     opacity: 0;
@@ -53,8 +65,33 @@
 }
 .Projects .project img {
     height: 100%;
+    width: 100%;
+}
+.Projects .Pro-title {
+    transition: .5s ease;
+    position: absolute;
+    z-index: 99;
+    bottom: 2vh;
+    padding: 0.5vh 1vh;
+    font-size: 2vh;
+    background: none;
+    border: none;
+    outline: none;
+}
+.Projects .btn-cover {
+    display: none;
+}
+.Projects .project .thumbnail:hover .Pro-title {
+    bottom: auto;
+    z-index: 9999;
+    color: #ffffff;
+    display: block;
 }
 .Projects .project img.logo {
     height: 40%;
-    transition: height 0.5s ease;
+    width: auto;
+    transition: 0.5s linear;
+    -webkit-transition: 0.5s linear;
+    -ms-transition: 0.5s linear;
+    -moz-transition: 0.5s linear;
 }

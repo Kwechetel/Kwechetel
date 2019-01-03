@@ -48,14 +48,18 @@ class App extends Component {
 
     const pageScrllTop = window.pageYOffset;
 
-    if (pageScrllTop > 80) {
-
-      this.setState({NavPosition: 'fixedClass'});
-
-    } else {
-      
+    if(window.innerHeight <= 640) {
       this.setState({NavPosition: 'notFixed'});
+    }else {
+      if (pageScrllTop > 1060) {
 
+        this.setState({NavPosition: 'fixedClass'});
+
+      } else {
+        
+        this.setState({NavPosition: 'notFixed'});
+
+      }
     }
     
   }

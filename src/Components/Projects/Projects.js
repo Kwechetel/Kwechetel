@@ -50,10 +50,11 @@ class Projects extends Component {
                                             <div className="thumbnail">
 
                                                 <div onMouseOver={this.onMouseOver} id={proj.id} className="overlay">
-                                                    <strong>{proj.name}</strong>
+                                                    
                                                 </div>
 
                                                 <img className={proj.type} src={proj.img} alt={proj.name}/>
+                                                <button className={`${"Pro-title"} ${'btn-'}${proj.type}`}>{proj.name}</button>
 
                                             </div>
                                         </div>

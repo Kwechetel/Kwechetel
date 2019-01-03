@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './AboutSkills.css';
-import WorkingOn from '../WorkingOn/WorkingOn';
+//import WorkingOn from '../WorkingOn/WorkingOn';
 
 class AboutSkills extends Component {
 
@@ -19,8 +19,6 @@ class AboutSkills extends Component {
         return(
             <div id="about" className="About">
 
-              <WorkingOn/>
-
               <div className="About-header">
                 <h1>Skills</h1>
                 <p>
@@ -29,91 +27,80 @@ class AboutSkills extends Component {
                     and php OOP with slim micro framework in back-end.   
                 </p>
               </div>
-              
-              <div className="row">
 
-                <div className="Front-End">
-                    <div className="col-4">
-                        <h2>Front-End Skills</h2>
-                    </div>
+              <table>
+                  <tbody>
+                    <tr>
+                        <td className="Td-title">
+                            <h2>Front-End Skills</h2>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>UI/UX DESIGNER</li>
+                                <li>HTML5</li>
+                                <li>CSS3</li>
+                                <li>JavaScript</li>
+                                <li>React</li>
+                                <li>jQuery</li>
+                            </ul>
+                        </td>
+                    </tr>
 
-                    <div className="col-8">
-                        <ul>
-                            <li>UI/UX DESIGNER</li>
-                            <li>HTML5</li>
-                            <li>CSS3</li>
-                            <li>JavaScript</li>
-                            <li>React</li>
-                            <li>jQuery</li>
-                        </ul>
-                    </div>
-                </div>
+                    <tr>
+                        <td className="Td-title">
+                            <h2>Back-End Skills</h2>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>PHP</li>
+                                <li>RESTful API</li>
+                                <li>JWT Web Token</li>
+                                <li>SQL</li>
+                                <li>MySQL</li>
+                            </ul>
+                        </td>
+                    </tr>
 
-                <hr/>
+                    <tr>
+                        <td className="Td-title">
+                            <h2>VCS Tools</h2>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Git</li>
+                            </ul>
+                        </td>
+                    </tr>
 
-                <div className="Back-End">
-                    <div className="col-4">
-                        <h2>Back-End Skills</h2>
-                    </div>
+                    <tr>
+                        <td className="Td-title">
+                            <h2>Graghics Tools</h2>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Adobe XD</li>
+                                <li>Adobe AI</li>
+                                <li>Adobe Photoshop</li>
+                                <li>Inkscape</li>
+                            </ul> 
+                        </td>
+                    </tr>
 
-                    <div className="col-8">
-                        <ul>
-                            <li>PHP</li>
-                            <li>RESTful API</li>
-                            <li>JWT Web Token</li>
-                            <li>SQL</li>
-                            <li>MySQL</li>
-                        </ul>
-                    </div>
-                </div>
+                    <tr>
+                        <td style={{border: 'none'}} className="Td-title">
+                            <h2>Languages</h2>
+                        </td>
+                        <td style={{border: 'none'}}>
+                            <ul>
+                                <li>English</li>
+                                <li>Shona (Native)</li>
+                            </ul>
+                        </td>
+                    </tr>
 
-                <hr/>
-
-                <div className="tools">
-                    <div className="col-4">
-                        <h2>Version Control Systems</h2>
-                    </div>
-
-                    <div className="col-8">
-                        <ul>
-                            <li>Git</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <hr/>
-
-                <div className="tools">
-                    <div className="col-4">
-                        <h2>Graghics Tools</h2>
-                    </div>
-
-                    <div className="col-8">
-                        <ul>
-                            <li>Adobe XD</li>
-                            <li>Adobe AI</li>
-                            <li>Adobe Photoshop</li>
-                            <li>Inkscape</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <hr/>
-
-                <div className="languages">
-                    <div className="col-4">
-                        <h2>Languages</h2>
-                    </div>
-
-                    <div className="col-8">
-                        <ul>
-                            <li>English</li>
-                            <li>Shona (Native)</li>
-                        </ul>
-                    </div>
-                </div>
-
-              </div>
+                  </tbody>
+                  
+              </table>
 
             </div>
         );

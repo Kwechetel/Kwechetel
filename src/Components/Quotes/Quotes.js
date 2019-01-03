@@ -6,7 +6,7 @@ class Quotes extends Component {
         super(props);
     
         this.state = {
-          quote: 1
+          quote: null
         };
     
         this.quotes = {
@@ -22,9 +22,11 @@ class Quotes extends Component {
       }
     
       componentDidMount() {
-    
-        setInterval(() => {
-          const quoteIndex = Math.floor(Math.random()*this.quotes.arr.length);
+        const quoteIndex = Math.floor(Math.random()*this.quotes.arr.length);
+
+        this.setState({quote: quoteIndex})
+        
+        setInterval(() => {          
           this.setState({quote: quoteIndex})
         }, 10000);
       }

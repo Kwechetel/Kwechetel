@@ -52,23 +52,26 @@ class Header extends Component {
       
             <Pattern/>
 
-            <div style={{zIndex: 1}}>
+            <div className="App-container" style={{zIndex: 1}}>
 
               <div id="user" className="row">
 
                 <div className='mypic col-4'>
-                  <img src={logo} alt='mypic'/>
+                  <div className="photo">
+                    <img src={logo} alt='mypic'/>
+                  </div>
                 </div>
 
                 <div className='col-8'>
-                  <p className="full-name"><strong>LAST KWECHETE</strong></p>                 
-                  <p><strong>SKILLS:</strong> UI/UX DESIGNER | FULLSTACK DEVELOPER | GRAGHICS DESIGNER | API DEVELOPER</p>
-                  <p><strong>PROGRAMMING:</strong> HTML/CSS | JAVASCRIPT | REACT | PHP</p>
-                  <hr/>
-                  <p>
-                    <strong>Biography</strong><br/><span style={{fontSize: '1.8vh'}}>Passionate programmer, enthusiastic on new technologies and striving on problem solving. I always look for a better way of doing things. 
-                    I'm the kind of person who takes responsibilities and work very hard for the best outcome.</span> 
-                  </p>
+                  <div style={{margin: "1vh 2vh"}}>
+                    <p className="full-name"><strong>LAST KWECHETE</strong></p>                 
+                    <p><strong>SKILLS:</strong> UI/UX DESIGNER | FULLSTACK DEVELOPER | GRAGHICS DESIGNER | RESTful API DEVELOPER</p>
+                    <hr/>
+                    <p>
+                      <strong>Biography</strong><br/><span style={{fontSize: '1.8vh'}}>Passionate programmer, enthusiastic on new technologies and striving on problem solving. I always look for a better way of doing things. 
+                      I'm the kind of person who takes responsibilities and work very hard for the best outcome.</span> 
+                    </p>
+                  </div>
                 </div>
 
               </div>

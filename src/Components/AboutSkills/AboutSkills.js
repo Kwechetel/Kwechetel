@@ -74,7 +74,7 @@ class AboutSkills extends Component {
 
                     <tr>
                         <td className="Td-title">
-                            <h2>Graghics Tools</h2>
+                            <h2>Graphics Tools</h2>
                         </td>
                         <td>
                             <ul>

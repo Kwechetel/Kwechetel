@@ -18,7 +18,7 @@ table {
 }
 .Td-title h2 {
     position: absolute;
-    top: 2vh;
+    top: 4vh;
     left: 1vw;
     font-size: 2vh;
 }
@@ -26,8 +26,6 @@ table td {
     border-bottom: 1px solid rgb(116, 113, 113);
     border-collapse: collapse;
     text-align: right;
-}
-table td  {
     padding: 2vh;
 }
 table ul {
@@ -35,7 +33,7 @@ table ul {
 }
 table li {
     display: inline-block;
-    margin: 2vh;
+    margin: 2vh 0 2vh 7.5vh;
 }
 .About-header {
     padding: 0 10vw;

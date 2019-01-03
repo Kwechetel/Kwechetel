@@ -65,7 +65,7 @@ class Header extends Component {
                 <div className='col-8'>
                   <div style={{margin: "1vh 2vh"}}>
                     <p className="full-name"><strong>LAST KWECHETE</strong></p>                 
-                    <p><strong>SKILLS:</strong> UI/UX DESIGNER | FULLSTACK DEVELOPER | GRAGHICS DESIGNER | RESTful API DEVELOPER</p>
+                    <p><strong>SKILLS:</strong> UI/UX DESIGNER | FULLSTACK DEVELOPER | GRAPHICS DESIGNER | RESTful API DEVELOPER</p>
                     <hr/>
                     <p>
                       <strong>Biography</strong><br/><span style={{fontSize: '1.8vh'}}>Passionate programmer, enthusiastic on new technologies and striving on problem solving. I always look for a better way of doing things. 

@@ -1,11 +1,7 @@
 import React, { Component } from 'react';
 import './Projects.css';
+import { projectData } from './ProjectData';
 
-//projects
-import portfolio from '../../Assets/projects/portfolio/portfolio.PNG'; 
-import klast from '../../Assets/projects/klast/klast.svg';
-import unifrica from '../../Assets/projects/unifrica/unifrica.svg';
-import questdea from '../../Assets/projects/questdea/questdea.svg';
 
 class Projects extends Component {
 
@@ -13,19 +9,27 @@ class Projects extends Component {
         super(props);
     
         this.state = {
-            Projects: [
-                {'id': 'pro-0', 'name': 'Klast Academy', 'img': klast, 'type': 'logo'},
-                {'id': 'pro-1', 'name': 'UNIfrica Org', 'img': unifrica, 'type': 'logo'},
-                {'id': 'pro-2', 'name': 'QuestDea', 'img': questdea, 'type': 'logo'},
-                {'id': 'pro-3', 'name': 'This Project', 'img': portfolio, 'type': 'cover'}
-            ]
+            Projects: projectData,
+            num: 0
         };
 
         this.onMouseOver = this.onMouseOver.bind(this);
       }
     
       componentDidMount() {
-    
+        let proLength = this.state.Projects.length;
+        proLength--;
+
+        setInterval(() => {
+            let proIndex = this.state.num;
+
+            if( proIndex < proLength) {
+                proIndex++;
+                this.setState({num: proIndex})
+            }else {
+                this.setState({num: 0})
+            }
+        }, 3000);
       }
       onMouseOver(e) {
           console.log(e.target.id);
@@ -41,12 +45,35 @@ class Projects extends Component {
               
                 <div className="row">
 
-                    <div className="Front-End">
+                    <div className="Pro-preview col-4">
+                        {
+                            [Projects[this.state.num]].map((proj) => {
+                                return(
+                                    <div className="thumbnail" key={proj.id}>
+                                        <div className="Preview-header">
+                                            <img src={proj.img} alt={proj.name} />
+                                            <strong>{proj.name}</strong> 
+                                        </div>
+                                        <div className="Pro-description"> 
+                                            <p><strong>Started:</strong> {proj.started}</p>
+                                            <p><strong>End:</strong> Ongoing</p>
+                                            <p><strong>Project Type:</strong> {proj.protype}</p>
+                                            <p><strong>Status:</strong> {proj.status}</p>
+                                        </div>
+                                    </div>
+                                );
+                            })
+                        }
+                    </div>
+
+                    <div className="col-8">
+
+                    <div className="row">
                         <React.Fragment>
                             {
                                 Projects.map((proj) => {
-                                    return ( 
-                                        <div key={proj.id} name={proj.id} className="project col-4">
+                                    return (                                         
+                                        <div key={proj.id} name={proj.id} className="project col-6">
                                             <div className="thumbnail">
 
                                                 <div onMouseOver={this.onMouseOver} id={proj.id} className="overlay">
@@ -62,6 +89,8 @@ class Projects extends Component {
                                 })
                             }                        
                         </React.Fragment>
+                    </div>
+
                     </div>
 
                 </div>

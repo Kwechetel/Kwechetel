@@ -1,13 +1,14 @@
 .Projects {
     padding: 2vh 20vw;
     min-height: 75vh;
-    background: rgb(255, 255, 255); 
+    background: rgb(255, 255, 255);
+    padding-bottom: 15vh; 
 }
 @media screen and (max-width: 460px) {
     .Projects {
         padding: 5vh;
     }
-    .Projects .col-4 {
+    .Projects [class*=col-] {
         width: 100%;
         margin-bottom: 2vh;
     }
@@ -94,4 +95,28 @@
     -webkit-transition: 0.5s linear;
     -ms-transition: 0.5s linear;
     -moz-transition: 0.5s linear;
+}
+
+.Projects .Pro-preview .thumbnail {
+    margin: 0 1vh;
+    box-shadow: 0 0 1vh rgba(0, 0, 0, 0.301);
+    height: auto;
+    font-size: 1.8vh;
+}
+
+.Projects .Preview-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+    position: relative;
+    overflow: hidden;
+}
+.Projects .Preview-header img {
+    height: 30%;
+}
+.Projects .Pro-description {
+    height: 33vh;
+    padding: 1vh 2vh;
 }

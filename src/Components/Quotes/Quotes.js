@@ -25,8 +25,9 @@ class Quotes extends Component {
         const quoteIndex = Math.floor(Math.random()*this.quotes.arr.length);
 
         this.setState({quote: quoteIndex})
-        
-        setInterval(() => {          
+
+        setInterval(() => {
+          let quoteIndex = Math.floor(Math.random()*this.quotes.arr.length);          
           this.setState({quote: quoteIndex})
         }, 10000);
       }
